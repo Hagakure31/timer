@@ -1,23 +1,26 @@
-// function input() {
-// document.getElementById("dateInput").addEventListener("change", function(){
-//     var input = this.value;
-//     var dateEntered = new Date(input);
-
-//     return dateEntered;
-// });
-
-
-
 
 function countdown() {
     
+    
+    
+    var x = document.getElementById("myDate").value;  
+    
+      
+    
+    var eventDate = new Date(x);
+    
     var now = new Date();
-    var eventDate = new Date('September 12, 2019');
+    
     
     var currentTime = now.getTime();
     var eventTime = eventDate.getTime();
     
+
     var remainingTime = eventTime - currentTime;
+    
+      
+
+    
 
     var s = Math.floor(remainingTime / 1000);
     var m = Math.floor(s / 60);
@@ -37,8 +40,10 @@ function countdown() {
     document.getElementById('hours').textContent = h;
     document.getElementById('minutes').textContent = m;
     document.getElementById('seconds').textContent = s;
+    
 
     setTimeout(countdown, 1000);
 }
 
-countdown();
+
+

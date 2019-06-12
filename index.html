@@ -15,10 +15,10 @@
         <table class="container">
          
             <tr class="info">
-                <td id="days">2</td>
-                <td id="hours">1</td>
-                <td id="minutes">28</td>
-                <td id="seconds">12</td>
+                <td id="days">00</td>
+                <td id="hours">00</td>
+                <td id="minutes">00</td>
+                <td id="seconds">00</td>
                 <tr>
                     <td>Jours</td>
                     <td>Heures</td>
@@ -27,13 +27,13 @@
                 </tr>
             </tr>
          </table>
-         <!-- <form>
-            <fieldset>
-                <label>Entre la date de ton anniversaire :</label>
-                <input type="date" id="dateInput"/>
-                <button onclick="input()">Envoyer</button>
-            </fieldset>
-        </form> -->
+         <div id="select">
+            <label id="bday">Veuillez saisir une date ultérieure :</label><br>
+            <input type="date" id="myDate">
+            <button id="validation" onclick="countdown()">Envoyer</button>
+            
+        </div>
+        
     </main>
    
     <footer>
